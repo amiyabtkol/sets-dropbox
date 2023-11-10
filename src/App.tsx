@@ -21,8 +21,9 @@ function App() {
 
   const onSuccess = (files: { link: any }[]) => {
     // console.log('onSuccess', files)
-    // const { link } = files[0];
+    const { link } = files[0];
     console.log(files);
+    request(link);
   };
 
   const onCancel = (file: any) => {
